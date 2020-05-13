@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+	background-color: #444444;
+	color: white;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+#sauger-header {
+	padding: 0;
+	margin: 0;
+	background-color: #242424;
+	color: white;
+	font-size: 100%;
+	font: 16px Arial, sans-serif;
+	text-align: center;
+}
+
+#sauger-container {
+	position: relative;
+	padding: 0;
+	margin: 0 auto;
+	width: 900px;
+	color: black;
+	min-height: 100%;
+	background-color: #efefef;
+	font-size: 100%;
+	-webkit-box-shadow: 10px 0 10px -6px black, -10px 0 10px -6px black;
+    -moz-box-shadow: 10px 0 10px -6px black, -10px 0 10px -6px black;
+    box-shadow: 10px 0 10px -6px black, -10px 0 10px -6px black;
+}
+
+#sauger-content {
+	padding-bottom: 51px;
+	color: black;
+	background-color: #efefef;
+	font-size: 100%;
+}
+
+#sauger-footer {
+	position: absolute;
+	bottom: 0;
+	padding: 5px 0 0 0;
+	width: 900px;
+	height: 40px;
+	color: black;
+	font: 12px Arial, sans-serif;
+	background-color: #d6d6d6;
+	border-top: 1px solid black;
+	text-align: center;
+}
+
+#sauger-upload {
+	background-color: #fbff90;
+	font-size: 100%;
+	border-bottom: 1px solid black;
+	font: 14px Arial, sans-serif;
+	text-align: center;
+}
+
+#sauger-log {
+	background: #50c544;
+	height: 150px;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+	font: 12px Arial, sans-serif;
+	border-bottom: 1px solid black;
+}
+
+#sauger-log li {
+	background: #b3ffab;
+	padding: 2px;
+	margin: 2px;
+}
+
+#sauger-sfdl {
+	background: #f57777;
+	max-height: 150px;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+	font: 12px Arial, sans-serif;
+	border-bottom: 1px solid black;
+}
+
+#sauger-sfdl li {
+	background: #ffbbbb;
+	padding: 2px;
+	margin: 2px;
+}
+
+#sauger-server {
+	border-collapse: collapse;
+	font: 12px Arial, sans-serif;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+
+#sauger-server td, #sauger-server th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#sauger-server tr:nth-child(even) {
+	background-color: #d8d8d8;
+}
+
+#sauger-server th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: #242424;
+	color: white;
+}
+
+#sauger-files {
+	border-collapse: collapse;
+	font: 12px Arial, sans-serif;
+	width: 100%;
+}
+
+#sauger-files td, #sauger-files th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#sauger-files tr:nth-child(even) {
+	background-color: #d8d8d8;
+}
+
+#sauger-files th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: #242424;
+	color: white;
+}
+
+progress[value] {
+	width: 100px;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.noscriptinfo {
+	font: 16px Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}

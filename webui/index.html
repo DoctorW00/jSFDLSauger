@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>jSFDLSauger WebUI</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="sys/sauger.css">
+		<script src="sys/sauger.js" type="text/javascript"></script>
+	</head>
+	<body onload="updateData()">
+		<noscript>
+			<style type="text/css">#sauger-container {display: none;}</style>
+			<div class="noscriptinfo"><img src="icon.png"><br /><br />You don't have JavaScript enabled. Praise Jesus!</div>
+		</noscript>
+		<div id="sauger-container">
+			<div id="sauger-content">
+				<div id="sauger-header">
+					<div style="padding: 10px;">j<b>SFDL</b>Sauger WebUI</div>
+				</div>
+				<div id="sauger-upload">
+					<div style="padding: 10px;">
+						<div style="margin: 0 0 5px 0;"><b>Upload new SFDL file(s)</b></div>
+						<div id="sfdlFiles"></div>
+						<div style="margin: 10px 0 0 0;">
+						<form id="sfdlForm" action="/upload" method="post" enctype="multipart/form-data">
+							<input name="SFDL[]" type="file" id="file" onchange="javascript:updateUploadList()" multiple>
+							<button id="uploadSFDL" onclick="uploadSFDLFiles(); return false;">Upload</button>
+						</form>
+						</div>
+					</div>
+				</div>
+				<ul id="sauger-log"></ul>
+				<ul id="sauger-sfdl"></ul>
+				<table id="sauger-server"></table>
+				<table id="sauger-files"></table>
+			</div>
+			<div id="sauger-footer">
+				<p>jSFDLSauger WebUI (GrafSauger) / <a href="https://github.com/DoctorW00/jSFDLSauger/releases/latest" target="_blank">GitHub</a><br />Visit <a href="https://mlcboard.com/" target="_blank">MLCBoard.com</a></p>
+			</div>
+		</div>
+	</body>
+</html>
